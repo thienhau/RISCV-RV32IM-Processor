@@ -28,6 +28,8 @@ This repository contains a Verilog implementation of a 32-bit RISC-V processor f
 
 ### 5. Multiplier-Divider Unit (MDU)
 - Supports RISC-V "M" extension-like operations with dedicated hardware multiplier and divider that can stall the pipeline until the computation completes.
+- The BITS_PER_CYCLE parameter allows a trade-off between system frequency, multiplication throughput, and hardware area.
+- Example: For multiplier-intensive applications (e.g., DSP), a higher BITS_PER_CYCLE is required to boost throughput and reduce latency. For general-purpose integer tasks where multiplication is rare, a lower BITS_PER_CYCLE (e.g., 1 bit/cycle) is ideal to minimize area and maintain high clock speeds.
 
 ### 6. Block diagram
 ![RISC-V block diagram](RISCV_block_diagram.png)
