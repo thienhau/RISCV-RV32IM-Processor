@@ -56,5 +56,6 @@ This repository contains a Verilog implementation of a 32-bit RISC-V processor f
 1. Verified all core functionalities of the processor like pipeline, read/write cache/memory, dynamic branch prediction, all instructions and handle hazards.
 2. Tested with Assembly program like Fibonacci, Factorial, GCD...
 3. Implement at 400+ MHz if memories are not BRAM, 300+ MHz if they are configed to use as BRAM with no timming error.
-4. Run on Arty Z7-20 with Fibonacci program and check correction with LEDs on board.
+4. 14K LUTs and 7.5K FFs (mainly for Cache, should change to BRAM for saving LUTs and FFs), 2 BRAM (for IMem and DMem).
+5. Run on Arty Z7-20 with Fibonacci program and check correction with LEDs on board.
 
